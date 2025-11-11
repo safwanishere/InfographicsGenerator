@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template,request
-import sqlite3
-import os
+import manim
+
 
 routes = Blueprint('routes', __name__)
 
