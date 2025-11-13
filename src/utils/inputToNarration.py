@@ -52,6 +52,10 @@ def input_to_narration(file_path):
     - Each narration should be **1–3 short paragraphs** long depending on the content length.
     - Never invent details or add information not present in the input.
 
+    ## Additional Instructions
+    - If a chunk requires supporting images or diagrams for understanding, mention them in a separate field called "images" in the json
+    - The "images" field should be an array of strings, each having a brief search query that can be used to find relevant images.
+
     ## Output Format
     Return a valid JSON object with the following structure:
     [
@@ -59,6 +63,7 @@ def input_to_narration(file_path):
         "section": "...",
         "title": "...",
         "narration_script": "...",
+        "images": ["image search query 1", "image search query 2"]
         },
         ...
     ]

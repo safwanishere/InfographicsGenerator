@@ -273,3 +273,8 @@ class Explainer(Scene):
         end = show_title_card("End of Explainer", "Refer to the Contract and referenced Sections for full requirements.")
         self.play(FadeOut(end, run_time=0.8))
         self.wait(0.2)
+
+
+if __name__ == '__main__':
+    scene = Explainer()
+    scene.render() # That's it!

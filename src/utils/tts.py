@@ -241,7 +241,7 @@ class EdgeTTSNarrationGenerator:
             if os.path.exists(list_filename):
                 os.remove(list_filename)
 
-    def process_narration_file(self, json_path: str) -> (List[str], str):
+    def process_narration_file(self, json_path: str):
         """
         Synchronous wrapper for async processing and merging.
         
